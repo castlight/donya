@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.donyasource</groupId>
+  <artifactId>donya</artifactId>
+  <version>0.5</version>
+  <name>Donya Internationalization for Java</name>
+  <description>Donya provides a declarative, easy-to-use internationalization framework for Java</description>
+</project>
