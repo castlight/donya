@@ -5,11 +5,11 @@ import java.util.ResourceBundle;
 
 import org.donyasource.donya.ResourceBundleLoader;
 
-public class PropertyBundleLoader implements ResourceBundleLoader {
+public class BasicBundleLoader implements ResourceBundleLoader {
    @Override
    public ResourceBundle loadBundle(String resourceFamily, Locale locale) {
-      // TODO Auto-generated method stub
-      return null;
+      // Just delegate to getBundle
+      return ResourceBundle.getBundle(resourceFamily, locale);
    }
 
    @Override
