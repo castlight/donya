@@ -17,8 +17,6 @@ public class SimpleExample {
          System.exit(1);
       }
       
-      System.out.println(Arrays.toString(Locale.getISOCountries()));
-
       String localeString = args[0];
       Locale locale = new Locale(localeString);
 
