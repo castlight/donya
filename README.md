@@ -22,7 +22,7 @@ To build, go to the top level directory and run:
 
 ## License
 
-Copyright (c) 2013-2014 Castlight Health. See the LICENSE file for license rights and limitations.
+Copyright (c) 2014 Castlight Health. See the LICENSE file for license rights and limitations.
 
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
