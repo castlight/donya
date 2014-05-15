@@ -21,7 +21,7 @@ public class SimpleExample {
 
       UserMessage message = new UserMessage(MessageCode.HELLO_WORLD);
        
-      ResourceBundleLoader bundleLoader = new PropertyBundleLoader(UserMessage.RESOURCE_FAMILY);
+      ResourceBundleLoader bundleLoader = new PropertyBundleLoader();
       LocalizingJsonMapper mapper = new LocalizingJsonMapper(locale, ImmutableList.of(bundleLoader));
       try {
          String json = mapper.writeValueAsString(message);
