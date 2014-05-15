@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.donyasource</groupId>
   <artifactId>donya</artifactId>
-  <version>0.5-SNAPSHOT</version>
+  <version>0.5</version>
   <name>Donya Internationalization for Java</name>
   <url>http://donyasource.org</url>
   <description>Donya provides a declarative, easy-to-use internationalization framework for Java</description>
