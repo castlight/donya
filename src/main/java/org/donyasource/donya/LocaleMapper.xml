@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="LocaleMapper">
+   <resultMap id="resourceMap" type="com.castlight.i18n.Resource">
+       <constructor>
+           <arg column="locale_key" javaType="string"/>
+           <arg column="family_key" javaType="string"/>
+           <arg column="resource_key" javaType="string"/>
+           <arg column="resource" javaType="string"/>
+       </constructor>
+   </resultMap>
+
+   <select id="getResources" parameterType="map" resultMap="resourceMap">
+      SELECT
+       locale_key,
+		family_key,
+		resource_key,
+		resource
+       FROM locale_resources
+       WHERE locale_key = #{locale_key} AND family_key = #{family_key}
+   </select>
+   
+   
+   <select id="getKnownFamilies" resultType="string">
+      SELECT
+       DISTINCT family_key
+       FROM locale_resources
+   </select>
+ </mapper>

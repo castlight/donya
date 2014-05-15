@@ -1,0 +1,28 @@
+package org.donyasource.donya.annotations;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Inherited
+@Target(ElementType.FIELD)
+@Retention(RetentionPolicy.RUNTIME)
+/**
+ * An argument to a localized resource
+ */
+public @interface ResourceArgument {
+   /**
+    * The name of the localized resource.  This is the name of a field that has
+    * an @LocalizedResource annotation.
+    * 
+    * This does not need to be specified if there is only one localized resource in this class.
+    */
+   public String resourceName() default "";
+   
+   /**
+    * The index of the argument to use when formatting the resource.  Starts at 0
+    */
+   public int index();
+}
