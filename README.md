@@ -26,3 +26,5 @@ Copyright (c) 2014 Castlight Health. See the LICENSE file for license rights and
 
 This project is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
+This project uses [Jackson] (http://jackson.codehaus.org/), [Apache Commons Lang](http://commons.apache.org/proper/commons-lang/), and [Guava](https://code.google.com/p/guava-libraries/) which are all under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
+
