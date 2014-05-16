@@ -18,7 +18,17 @@ Feedback and contributions welcome!
 	
 To build, go to the top level directory and run:
 	
-	mvn test
+	mvn package
+
+To run the simple example, run 
+
+        ./simple_example.sh en
+        
+Then try
+
+        ./simple_example.sh jv
+        
+Enjoy!
 
 ## License
 
