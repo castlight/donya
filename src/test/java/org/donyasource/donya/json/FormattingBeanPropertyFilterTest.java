@@ -34,7 +34,7 @@ public class FormattingBeanPropertyFilterTest {
    private FormattingBeanPropertyFilter underTest;
    @Mock private LocalizedResourceFormatter resourceFormatter;
 
-   @JsonFilter(LocalizingJsonMapper.I18N_FILTER_NAME)
+   @JsonFilter(LocalizingObjectMapper.I18N_FILTER_NAME)
    private static class BaseClass {
       private @JsonProperty final String fieldOne;
       private @JsonProperty final int fieldTwo;
@@ -108,7 +108,7 @@ public class FormattingBeanPropertyFilterTest {
       assertEquals("Hello!", result.myResource);
    }
    
-   @JsonFilter(LocalizingJsonMapper.I18N_FILTER_NAME)
+   @JsonFilter(LocalizingObjectMapper.I18N_FILTER_NAME)
    private static class MultipleResources {
       @LocalizedResource
       @JsonProperty
@@ -141,7 +141,7 @@ public class FormattingBeanPropertyFilterTest {
       assertEquals("Hey There!", result.otherResource);
    }
    
-   @JsonFilter(LocalizingJsonMapper.I18N_FILTER_NAME)
+   @JsonFilter(LocalizingObjectMapper.I18N_FILTER_NAME)
    private static class ListClass {
       @LocalizedResources
       @JsonProperty
@@ -167,7 +167,7 @@ public class FormattingBeanPropertyFilterTest {
       assertTrue("Expected " + expected + ", got " + actual.myList, actual.myList.containsAll(expected));
    }
    
-   @JsonFilter(LocalizingJsonMapper.I18N_FILTER_NAME)
+   @JsonFilter(LocalizingObjectMapper.I18N_FILTER_NAME)
    private static class MethodProperty {
       @JsonProperty("foo")
       public String getFoo() {

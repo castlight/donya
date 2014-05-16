@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Locale;
 
 import org.donyasource.donya.ResourceBundleLoader;
-import org.donyasource.donya.json.LocalizingJsonMapper;
+import org.donyasource.donya.json.LocalizingObjectMapper;
 
 import com.google.common.collect.ImmutableList;
 
@@ -23,7 +23,7 @@ public class SimpleExample {
       UserMessage message = new UserMessage(MessageCode.HELLO_WORLD);
        
       ResourceBundleLoader bundleLoader = new BasicBundleLoader();
-      LocalizingJsonMapper mapper = new LocalizingJsonMapper(locale, ImmutableList.of(bundleLoader));
+      LocalizingObjectMapper mapper = new LocalizingObjectMapper(locale, ImmutableList.of(bundleLoader));
       try {
          String json = mapper.writeValueAsString(message);
          System.out.println(json);

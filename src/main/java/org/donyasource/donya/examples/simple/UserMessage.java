@@ -5,9 +5,9 @@ import org.codehaus.jackson.map.annotate.JsonFilter;
 import org.donyasource.donya.annotations.LocalizedResource;
 import org.donyasource.donya.annotations.ResourceFamily;
 import org.donyasource.donya.annotations.ResourceKey;
-import org.donyasource.donya.json.LocalizingJsonMapper;
+import org.donyasource.donya.json.LocalizingObjectMapper;
 
-@JsonFilter(LocalizingJsonMapper.I18N_FILTER_NAME)
+@JsonFilter(LocalizingObjectMapper.I18N_FILTER_NAME)
 public class UserMessage {
    @ResourceFamily 
    public static final String RESOURCE_FAMILY = "org.donyasource.donya.examples.simple.messages";

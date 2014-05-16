@@ -13,11 +13,11 @@ import org.codehaus.jackson.map.ser.impl.SimpleFilterProvider;
 import org.donyasource.donya.LocalizedResourceFormatter;
 import org.donyasource.donya.ResourceBundleLoader;
 
-public class LocalizingJsonMapper extends ObjectMapper {
+public class LocalizingObjectMapper extends ObjectMapper {
    public static final String I18N_FILTER_NAME = "i18n_filter";
 
    ObjectWriter writer;
-   public LocalizingJsonMapper(Locale locale, List<ResourceBundleLoader> bundleLoaders) {
+   public LocalizingObjectMapper(Locale locale, List<ResourceBundleLoader> bundleLoaders) {
       super();
       FormattingBeanPropertyFilter filter = new FormattingBeanPropertyFilter(
                new LocalizedResourceFormatter(locale, bundleLoaders));
