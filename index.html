@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Donya by castlight</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Donya</h1>
+        <p>Donya (the Javanese word for &quot;the world&quot;) is a declarative internationalization framework for Java</p>
+        <p class="view"><a href="https://github.com/castlight/donya">View the Project on GitHub <small>castlight/donya</small></a></p>
+        <ul>
+          <li><a href="https://github.com/castlight/donya/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/castlight/donya/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/castlight/donya">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="https://github.com/castlight/donya/blob/master/src/main/resources/donya.png" alt="Donya Logo"></p>
+
+<h1>
+<a name="donya" class="anchor" href="#donya"><span class="octicon octicon-link"></span></a>Donya</h1>
+
+<p>Donya (the Javanese word for "the world") is a declarative internationalization framework for Java.</p>
+
+<p>You use annotations in a class to identify fields which need to be localized.  </p>
+
+<p>The current implementation uses these annotations to add the localized text when serializing an object
+into JSON using the Jackson JSON library.  However, other implementations can be implemented that use
+other mechanisms to automatically format the localized text.</p>
+
+<p>You can build using standard maven.  There is also an Eclipse project file.</p>
+
+<p>See the org.donyasource.dony.examples directory for an examples of how this is used.</p>
+
+<p>Feedback and contributions welcome!</p>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>To build, go to the top level directory and run:</p>
+
+<pre><code>mvn package
+</code></pre>
+
+<p>To run the simple example, run </p>
+
+<pre><code>    ./simple_example.sh en
+</code></pre>
+
+<p>Then try</p>
+
+<pre><code>    ./simple_example.sh jv
+</code></pre>
+
+<p>Enjoy!</p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright (c) 2014 Castlight Health. See the LICENSE file for license rights and limitations.</p>
+
+<p>This project is licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+
+<p>This project uses <a href="http://jackson.codehaus.org/">Jackson</a>, <a href="http://commons.apache.org/proper/commons-lang/">Apache Commons Lang</a>, and <a href="https://code.google.com/p/guava-libraries/">Guava</a> which are all under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a></p>
+
+<p>For testing we use <a href="https://code.google.com/p/mockito/">Mockito</a> which uses the <a href="http://opensource.org/licenses/MIT">MIT license</a> and <a href="http://junit.org/">Junit</a> which uses the <a href="https://github.com/junit-team/junit/blob/master/LICENSE.txt">Eclipse Public License</a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/castlight">castlight</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
