@@ -1,7 +1,5 @@
 # Donya
 
-![Donya Logo](https://github.com/castlight/donya/blob/master/src/main/resources/donya.png)
-
 Donya (the Javanese word for "the world") is a declarative internationalization framework for Java.
 
 You use annotations in a class to identify fields which need to be localized.  
