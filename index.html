@@ -4,28 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Donya by castlight</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
         <h1>Donya</h1>
         <p>Donya (the Javanese word for &quot;the world&quot;) is a declarative internationalization framework for Java</p>
-        <p class="view"><a href="https://github.com/castlight/donya">View the Project on GitHub <small>castlight/donya</small></a></p>
-        <ul>
-          <li><a href="https://github.com/castlight/donya/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/castlight/donya/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/castlight/donya">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/castlight/donya" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/castlight/donya/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/castlight/donya/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
         <p><img src="https://github.com/castlight/donya/blob/master/src/main/resources/donya.png" alt="Donya Logo"></p>
 
@@ -77,11 +89,11 @@ other mechanisms to automatically format the localized text.</p>
 
 <p>For testing we use <a href="https://code.google.com/p/mockito/">Mockito</a> which uses the <a href="http://opensource.org/licenses/MIT">MIT license</a> and <a href="http://junit.org/">Junit</a> which uses the <a href="https://github.com/junit-team/junit/blob/master/LICENSE.txt">Eclipse Public License</a></p>
       </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/castlight">castlight</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/castlight">castlight</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
