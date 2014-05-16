@@ -10,7 +10,7 @@ other mechanisms to automatically format the localized text.
 
 You can build using standard maven.  There is also an Eclipse project file.
 
-See the org.donyasource.dony.examples directory for some examples of how this is used.
+See the org.donyasource.dony.examples directory for an examples of how this is used.
 
 Feedback and contributions welcome!
 
