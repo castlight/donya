@@ -28,3 +28,5 @@ This project is licensed under the [MIT license](http://opensource.org/licenses/
 
 This project uses [Jackson] (http://jackson.codehaus.org/), [Apache Commons Lang](http://commons.apache.org/proper/commons-lang/), and [Guava](https://code.google.com/p/guava-libraries/) which are all under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0)
 
+For testing we use [Mockito](https://code.google.com/p/mockito/) which uses the [MIT license](http://opensource.org/licenses/MIT) and [Junit](http://junit.org/) which uses the [Eclipse Public License] (https://github.com/junit-team/junit/blob/master/LICENSE.txt)
+
